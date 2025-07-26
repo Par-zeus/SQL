@@ -17,7 +17,7 @@ select rtrim('           sky            ');
 select first_name,
 left(first_name,3) as lefty,
 right(first_name,3) as righty,
-substring(first_name,2,3) as indexbased, -- from position 2 want 4 characters
+substring(first_name,2,4) as indexbased, -- from position 2 want 4 characters
 birth_date,
 substring(birth_date,6,2) as born_month
 from employee_demographics;
