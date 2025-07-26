@@ -49,14 +49,14 @@ LIMIT 3
 
 SELECT * FROM employee_demographics
 ORDER BY age ASC
-LIMIT 2,1
+LIMIT 2,1 -- 2 is OFFSET and 1 is limit meaning it will start printing after 1st 2 rows and will print 1 row
 ;
 
 -- ALIASING
 SELECT gender,AVG(age) as ag
  FROM employee_demographics
  GROUP BY gender
- HAVING ag>40
+ HAVING age>40
 ;
 
  
